@@ -4,8 +4,11 @@
 session_start();?>
 <ul id="nav-container">
 	<a href="/cosmic"><img id="nav-logo" src="img/logo.png"></a>
-	<a href="radio"><li class="nav-item">Radio</li></a>
-	<a href="archive"><li class="nav-item">Archives</li></a>
+	<a href="radio"><li class="nav-item">CP Radio</li></a>
+	<a href="ms"><li class="nav-item">Music Shit</li></a>
+		<a href="bas"><li class="nav-item">BaS</li></a>
+			<a href="pid"><li class="nav-item">Projects in Development</li></a>
+				<a href="wip"><li class="nav-item">W.I.P only</li></a>
 	<?php 
 		if(!empty($_SESSION['admin'])){
 			echo '<li class="nav-admin nav-item">'.
