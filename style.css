@@ -1,0 +1,226 @@
+/* Written by Auke Scheepstra */
+
+/* Footer */
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+body{
+	margin: calc(2.5em + 4px) 0 6em; /* equal to footer height */
+	background: url("img/bg.png");
+	font-family: Candara;
+}
+
+#footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 3.5em;
+    width: 100%;
+    overflow:hidden;
+	background: url("img/wave2.png") right repeat-x;
+}
+
+.footer-item{
+	width: calc(100%/3 - 1.7px);
+	height: 100%;
+	float: left;
+	display: flex;
+}
+
+.footer-item p{
+	padding: .5em;
+	line-height: 1.5em;
+}
+
+.footer-social-media{
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.footer-social-media a{
+	max-width: calc(25% - 1em);
+	max-height: calc(100% - 1em);
+	height: auto;
+	margin: .5em;
+}
+
+.footer-icon{
+	height: 100%;
+	width: auto;
+}
+
+@media all and (orientation:portrait){
+	.footer-icon{
+		max-width: 2em;
+	}
+}
+
+#footer-overlay{
+	z-index:2;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height:2em;
+	width: 100%;
+	background: url("img/wave1.png") bottom right repeat-x;
+}
+
+/* Header */
+
+#header{
+	width: 10em;
+	height: 2.5em;
+	line-height: 2.5em;
+	position: fixed;
+	top: 0;
+	left: calc(50% - 2px);
+	text-align: center;
+	background: #fffa00;
+	border: 2px solid black;
+}
+
+/* Shop */
+
+#shop{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.shop-item > img{
+	width:100%;
+	max-width: 20em;
+	height: auto;
+}
+
+.item-name{
+	float: left;
+}
+
+.item-price{
+	float: right;
+}
+
+#nav-search, #query{
+	width: 100%;
+	padding: 0;
+}
+
+/* Lipsum */
+
+#lipsum img{
+	width: 150px;
+	height: auto;
+}
+
+#lipsum {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#lipsum div{
+	width:30%;
+	height: 15em;
+	padding: 5%;
+	background: #eee !important;
+	z-index: -1;
+	float: left;
+}
+
+#lipsum h1 {
+	width:40%;
+	background: #eee !important;
+	text-align: center;
+	float: left;
+	padding: 0 0 5% 0;
+	height: 2em;
+}
+
+@media (orientation: portrait) {
+	#lipsum{
+		width: 100%;
+	}
+	#lipsum div{
+		width: 100%;
+	}
+}
+
+/* Archive */
+#archive {
+	width: 90%;
+	padding: 0 5%;
+}
+
+#archive h1{
+	border: 2px solid black;
+	width: 60%;
+	background: #ddd !important;
+	text-align: center;
+	float: left;
+	margin: 0 calc(20% - 2px) 2.5%;
+	height: 2em;
+	line-height: 2em;
+}
+
+#archive > div{
+	width: 25%;
+	float: left;
+	text-align: center;
+	background: #777;
+}
+
+#collumn2 {
+	margin: 0 12.5%
+}
+
+#collumn1 > div, #collumn2 > div, #collumn3 > div{
+	width: 75%;
+	height: 15em;
+	padding: 5%;
+	margin: 0 7.5% 2em;
+	background: #eee !important;
+	z-index: -1;
+	float: left;
+}
+
+/* Create Account */
+
+form{
+	width: 40%;
+	padding: 5%;
+	margin: 0 25%;
+	background: #777;
+}
+
+input, select{
+	width: 100%;
+}
+
+/* Social Media */
+
+#social{
+	width: calc(100%-10em);
+	height: 20.5em;
+	padding: 0 5em;
+	background: #777;
+	line-height: 20.5em;
+}
+
+.social-icon{
+	width: 10em;
+	height: auto;
+	float: left;
+}
+
+/* STYLES */
+/* Wireframe */
+
+#nav-logo, .nav-item, .nav-dropdown-item, .shop-item, #query, #lipsum p{
+	background: #fff;
+	border: 1px solid #000;
+}
